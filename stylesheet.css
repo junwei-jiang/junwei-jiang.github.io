@@ -140,3 +140,54 @@ span.highlight {
     display: inline-block;
     border-radius: 10px;
 }
+
+/* .pub-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.pub-list li {
+  margin-bottom: 20px;
+  line-height: 1.4em;
+}
+
+.pub-list .papertitle {
+  font-weight: bold;
+  font-size: 15px;
+  color: #000;
+}
+
+.pub-list a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+.pub-list a:hover {
+  color: #f09228;
+} */
+
+.pub-entry {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  max-width: 800px;
+}
+
+.pub-entry video {
+  border-radius: 10px;
+  margin-right: 16px;
+  width: 160px;
+  height: auto;
+}
+
+.pub-meta {
+  font-size: 14px;
+  line-height: 1.4em;
+}
+
+.pub-meta .papertitle {
+  font-weight: bold;
+  font-size: 15px;
+}
