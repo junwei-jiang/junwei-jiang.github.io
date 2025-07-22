@@ -41,10 +41,11 @@
                   <strong>Email:</strong> junwei.jiang97 [AT] outlook.com
                 </p>
                 <p style="text-align:center">
-                  <a href="mailto:junwei.jiang97@outlook.com">Email</a> &nbsp;/&nbsp;
-                  <a href="data/Junwei Jiang_CV.pdf">CV</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=4womuwMAAAAJ&hl=de">Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/junwei-jiang">Github</a>
+                  <a href="mailto:junwei.jiang97@outlook.com">Email</a> &nbsp;|&nbsp;
+                  <a href="data/Junwei Jiang_CV.pdf">CV</a> &nbsp;|&nbsp;
+                  <a href="https://scholar.google.com/citations?user=4womuwMAAAAJ&hl=de">Scholar</a> &nbsp;|&nbsp;
+                  <a href="https://github.com/junwei-jiang">Github</a> &nbsp;|&nbsp;
+                  <a href="https://www.youtube.com/@junweijiang4093">YouTube</a>        
                 </p>
               </td>
               <td style="padding:2.5%;width:37%;max-width:37%">
@@ -62,19 +63,43 @@
               </td>
             </tr>
           </tbody></table>
+
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>Publications</h2>
-                <div class="pub-entry">
-                  <div class="video-box" onmouseover="this.querySelector('video').play()" onmouseout="this.querySelector('video').pause()">
-                    <video width="160" muted loop preload="none" poster="images/cat4d.jpg">
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+            <tr onmouseout="sop_stop()" onmouseover="sop_start()"  bgcolor="#ffffff">
+              <td style="padding:16px;width:40%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='sop_image'>
+                    <video muted autoplay loop>
                       <source src="images/sop.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
                     </video>
                   </div>
-                  <div class="pub-meta">
-                    <span class="papertitle">A Second-Order Explicit Pressure Projection Method for Eulerian Fluid Simulation</span><br>
-                    <strong>Junwei Jiang</strong>, 
+                  <img src='images/sop.jpg' class="preview-image">
+                </div>
+                <script type="text/javascript">
+                  function sop_start() {
+                    document.getElementById('sop_image').style.opacity = "1";
+                  }
+
+                  function sop_stop() {
+                    document.getElementById('sop_image').style.opacity = "0";
+                  }
+                  sop_stop()
+                </script>
+              </td>
+              <td style="padding:8px;width:60%;vertical-align:middle">
+                <span class="papertitle">A Second-Order Explicit Pressure Projection Method for Eulerian Fluid Simulation</span>
+                <br>
+                <strong>Junwei Jiang</strong>, 
                     Xiangda Shen, 
                     Yuning Gong,
                     Zeng Fan,
@@ -82,209 +107,154 @@
                     Guanyu Xing,
                     Xiaohua Ren*,
                     Yanci Zhang*
-                    <br>
-                    <em>ACMSIGGRAPH/ Eurographics Symposium on Computer Animation 2022/ Computer Graphics Forum</em><br>
-                    <a href="https://cat-4d.github.io/">webpage</a> |
-                    <a href="https://arxiv.org/abs/2411.18613">arXiv</a> |
-                    <a href="https://github.com/...">code</a> |
-                    <a href="data/cat4d.bib">bibtex</a>
-                  </div>
+                <br>
+                <em>ACMSIGGRAPH/ Eurographics Symposium on Computer Animation 2022/ Computer Graphics Forum</em>
+                <br>
+                <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.14627">pdf</a> |
+                <a href="javascript:void(0);" onclick="toggleAbstract(this)">abstract</a> |
+                <a href="https://www.youtube.com/watch?v=B-7ZRLRBRX8&t=45s">video</a> |
+                <a href="https://github.com/junwei-jiang/SOEPP-Fluid-Simulation">code</a> |
+                <a href="data/sop.bib" target="_blank">bibtex</a>
+                <p></p>
+                <div class="abstract" style="display: none;">
+                  In this paper, we propose a novel second-order explicit midpoint method to address the issue of energy loss and vorticity dissipation in Eulerian fluid simulation. The basic idea is to explicitly compute the pressure gradient at the middle time of each time step and apply it to the velocity field after advection. Theoretically, our solver can achieve higher accuracy than the first-order solvers at similar computational cost. On the other hand, our method is twice and even faster than the implicit second-order solvers at the cost of a small loss of accuracy. We have carried out a large number of 2D, 3D and numerical experiments to verify the effectiveness and availability of our algorithm.
                 </div>
               </td>
             </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr onmouseout="bolt3d_stop()" onmouseover="bolt3d_start()"  bgcolor="#ffffd0">
-              <td style="padding:16px;width:20%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='bolt3d_image'><video  width=100% height=100% muted autoplay loop>
-                  <source src="images/sop.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
 
-                  </video></div>
-                  <img src='images/bolt3d.jpg' width="160">
+            <tr onmouseout="ccsoft_stop()" onmouseover="ccsoft_start()"  bgcolor="#ffffff">
+              <td style="padding:16px;width:40%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='ccsoft_image'>
+                    <video muted autoplay loop>
+                      <source src="images/ccsoft.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <img src='images/ccsoft.jpg' class="preview-image">
                 </div>
                 <script type="text/javascript">
-                  function bolt3d_start() {
-                    document.getElementById('bolt3d_image').style.opacity = "1";
+                  function ccsoft_start() {
+                    document.getElementById('ccsoft_image').style.opacity = "1";
                   }
 
-                  function bolt3d_stop() {
-                    document.getElementById('bolt3d_image').style.opacity = "0";
+                  function ccsoft_stop() {
+                    document.getElementById('ccsoft_image').style.opacity = "0";
                   }
-                  bolt3d_stop()
+                  ccsoft_stop()
                 </script>
               </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <a href="https://szymanowiczs.github.io/bolt3d">
-                  <span class="papertitle">A Second-Order Explicit Pressure Projection Method for Eulerian Fluid Simulation</span>
-                </a>
+              <td style="padding:8px;width:60%;vertical-align:middle">
+                <span class="papertitle">Parallel Real-Time Bone Driven Secondary Deformation Based on Clique Coloring</span>
                 <br>
-                <a href="https://szymanowiczs.github.io/">Stanislaw Szymanowicz</a>,
-                <a href="https://jasonyzhang.com">Jason Y. Zhang</a>,
-                <a href="https://pratulsrinivasan.github.io">Pratul Srinivasan</a>,
-                <a href="https://ruiqigao.github.io">Ruiqi Gao</a>,
-                <a href="https://github.com/ArthurBrussee">Arthur Brussee</a>,
-                <a href="https://holynski.org">Aleksander Holynski</a>,
-                <a href="https://ricardomartinbrualla.com">Ricardo Martin-Brualla</a>,
-            <strong>Jonathan T. Barron</strong>,
-                <a href="https://henzler.github.io">Philipp Henzler</a>
+                    Yusong Fu,
+                <strong>Junwei Jiang</strong>,                     
+                    Yina Lv,
+                    Yanci Zhang*
                 <br>
-                <em>ICCV</em>, 2025
+                <em>China Computer Aided Design and Computer Graphics (CAD/CG 2021) </em>
                 <br>
-                <a href="https://szymanowiczs.github.io/bolt3d">project page</a>
-                /
-                <a href="https://szymanowiczs.github.io/bolt3d">arXiv</a>
+                <a href="javascript:void(0);" onclick="toggleAbstract(this)">abstract</a> |
+                <a href="https://www.youtube.com/watch?v=oSlvppzzr-E">simple video</a>
                 <p></p>
-              </td>
-            </tr>
-
-
-
-    <tr onmouseout="bolt3d_stop()" onmouseover="bolt3d_start()"  bgcolor="#ffffd0">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='bolt3d_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images/bolt3d.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-
-          </video></div>
-          <img src='images/bolt3d.jpg' width="160">
-        </div>
-        <script type="text/javascript">
-          function bolt3d_start() {
-            document.getElementById('bolt3d_image').style.opacity = "1";
-          }
-
-          function bolt3d_stop() {
-            document.getElementById('bolt3d_image').style.opacity = "0";
-          }
-          bolt3d_stop()
-        </script>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://szymanowiczs.github.io/bolt3d">
-          <span class="papertitle">Bolt3D: Generating 3D Scenes in Seconds</span>
-        </a>
-        <br>
-        <a href="https://szymanowiczs.github.io/">Stanislaw Szymanowicz</a>,
-        <a href="https://jasonyzhang.com">Jason Y. Zhang</a>,
-        <a href="https://pratulsrinivasan.github.io">Pratul Srinivasan</a>,
-        <a href="https://ruiqigao.github.io">Ruiqi Gao</a>,
-        <a href="https://github.com/ArthurBrussee">Arthur Brussee</a>,
-        <a href="https://holynski.org">Aleksander Holynski</a>,
-        <a href="https://ricardomartinbrualla.com">Ricardo Martin-Brualla</a>,
-		<strong>Jonathan T. Barron</strong>,
-        <a href="https://henzler.github.io">Philipp Henzler</a>
-        <br>
-        <em>ICCV</em>, 2025
-        <br>
-        <a href="https://szymanowiczs.github.io/bolt3d">project page</a>
-        /
-        <a href="https://szymanowiczs.github.io/bolt3d">arXiv</a>
-        <p></p>
-        <p>
-		By training a latent diffusion model to directly output 3D Gaussians we enable fast (~6 seconds on a single GPU) feed-forward 3D scene generation.
-        </p>
-      </td>
-    </tr>
-          </tbody></table>
-
-          
-					<table style="width:100%; margin:0 auto; border:0; border-spacing:0; padding:16px;"><tbody>
-            <tr>
-              <td>
-                <h2>Miscellanea</h2>
+                <div class="abstract" style="display: none;">
+                  We propose a new clique based weighted mixed coloring decoupling scheme to reduce the error caused by par-allel Gauss Seidel iterations in dense systems such as bone driven secondary deformations. The coloring algo-rithm mainly focuses on the clique structure in the graph, that is, the global priority is given to large clique structure, and the local consideration is given to load balancing. Compared with previous work, our scheme has better decoupling effect for dense physical systems with a large number of coupling, which can make the GPU parallel solver have higher computational performance and better accuracy.
+                </div>
               </td>
             </tr>
           </tbody></table>
+
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            
-           
-            <tr>
-              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
-						     <div class="colored-box" style="background-color: #fcb97d;">
-								 <h2>Micropapers</h2>
-								 </div>
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <a href="https://arxiv.org/abs/2112.11687">Squareplus: A Softplus-Like Algebraic Rectifier</a>
-                <br>
-                <a href="https://arxiv.org/abs/2010.09714">A Convenient Generalization of Schlick's Bias and Gain Functions</a>
-                <br>
-                <a href="https://arxiv.org/abs/1704.07483">Continuously Differentiable Exponential Linear Units</a>
-                <br>
-                <a href="https://jonbarron.info/data/cvpr2023_llm_workshop_annotated.pdf">Scholars & Big Models: How Can Academics Adapt?</a>
+              <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Projects</h2>
               </td>
             </tr>
-
-
-            <tr>
-              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
-						     <div class="colored-box" style="background-color: #aaba9e;">
-								 <h2>Recorded Talks</h2>
-								 </div>
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:center">
-                <a href="https://www.youtube.com/watch?v=hFlF33JZbA0">Radiance Fields and the Future of Generative Media, 2025</a><br>				  
-                <a href="https://www.youtube.com/watch?v=h9vq_65eDas">View Dependent Podcast, 2024</a><br>
-                <a href="https://www.youtube.com/watch?v=4tDhYsFuEqo">Bay Area Robotics Symposium, 2023
-</a><br>
-                <a href="https://youtu.be/TvWkwDYtBP4?t=7604">EGSR Keynote, 2021</a><br>
-				<a href="https://www.youtube.com/watch?v=nRyOzHpcr4Q">TUM AI Lecture Series, 2020</a><br>
-				<a href="https://www.youtube.com/watch?v=HfJpQCBTqZs">Vision & Graphics Seminar at MIT, 2020</a>
-              </td>
-            </tr>
-
-            <tr>
-              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
-						     <div class="colored-box" style="background-color: #c6b89e;">
-								 <h2>Academic Service</h2>
-								 </div>
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:center">
-                <a href="https://iccv.thecvf.com/">Lead Area Chair, ICCV 2025</a>
-                <br>
-                <a href="https://cvpr.thecvf.com/Conferences/2025/Organizers">Lead Area Chair, CVPR 2025</a>
-                <br>
-                <a href="https://cvpr.thecvf.com/Conferences/2024/Organizers">Area Chair, CVPR 2024</a>
-                <br>
-                <a href="https://cvpr2023.thecvf.com/Conferences/2023/Organizers">Demo Chair, CVPR 2023</a>
-                <br>
-                <a href="https://cvpr2022.thecvf.com/area-chairs">Area Chair, CVPR 2022</a>
-                <br>
-                <a href="http://cvpr2021.thecvf.com/area-chairs">Area Chair & Award Committee Member, CVPR 2021</a>
-                <br>
-                <a href="http://cvpr2019.thecvf.com/area_chairs">Area Chair, CVPR 2019</a>
-                <br>
-                <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a>
-              </td>
-            </tr>
-						
-						
-           
-            <tr>
-              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
-						     <div class="colored-box" style="background-color: #edd892;">
-								 <h2>Teaching</h2>
-								 </div>
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:center">
-                <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">Graduate Student Instructor, CS188 Spring 2011</a>
-                <br>
-                <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">Graduate Student Instructor, CS188 Fall 2010</a>
-                <br>
-                <a href="http://aima.cs.berkeley.edu/">Figures, "Artificial Intelligence: A Modern Approach", 3rd Edition</a>
-              </td>
-            </tr>
-            
           </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+            <tr onmouseout="lsrtf_stop()" onmouseover="lsrtf_start()"  bgcolor="#ffffff">
+              <td style="padding:16px;width:40%;vertical-align:middle">
+                <div class="one">
+                  <img src='images/lsrtf.jpg' class="preview-image">
+                </div>
+                <script type="text/javascript">
+                  function lsrtf_start() {
+                    document.getElementById('lsrtf_image').style.opacity = "1";
+                  }
+
+                  function lsrtf_stop() {
+                    document.getElementById('lsrtf_image').style.opacity = "0";
+                  }
+                  lsrtf_stop()
+                </script>
+              </td>
+              <td style="padding:8px;width:60%;vertical-align:middle">
+                <span class="papertitle">Large Scale Real-Time Fluid Simulation</span>
+                <br>
+                <p></p>
+                <a href="https://www.youtube.com/watch?v=2p0gEe0cDX0">video</a>
+                <p></p>
+                 A NetEase pre-research project, which uses mixed Lagrangian particles, Eulerian grids and shallow water equation height fields to achieve a compromise between performance and accuracy.
+              </td>
+            </tr>
+
+            <tr onmouseout="holo_stop()" onmouseover="holo_start()"  bgcolor="#ffffff">
+              <td style="padding:16px;width:40%;vertical-align:middle">
+                <div class="one">
+                  <img src='images/holo.jpg' class="preview-image">
+                </div>
+                <script type="text/javascript">
+                  function holo_start() {
+                    document.getElementById('holo_image').style.opacity = "1";
+                  }
+
+                  function holo_stop() {
+                    document.getElementById('holo_image').style.opacity = "0";
+                  }
+                  holo_stop()
+                </script>
+              </td>
+              <td style="padding:8px;width:60%;vertical-align:middle">
+                <span class="papertitle">Real-Time Remote Assistance System Based on Hololens</span>
+                <br>
+                <p></p>
+                Develop a remote assistance system similar to Microsoft Dynamics 365. With the help of Hololens, guidance experts in different places can share the screen with front-line engineers remotely and in real time, and give instructions on the screen to achieve the function of remote assistance.
+              </td>
+            </tr>
+
+            <tr onmouseout="ddgi_stop()" onmouseover="ddgi_start()"  bgcolor="#ffffff">
+              <td style="padding:16px;width:40%;vertical-align:middle">
+                <div class="one">
+                  <img src='images/ddgi.jpg' class="preview-image">
+                </div>
+                <script type="text/javascript">
+                  function ddgi_start() {
+                    document.getElementById('ddgi_image').style.opacity = "1";
+                  }
+
+                  function ddgi_stop() {
+                    document.getElementById('ddgi_image').style.opacity = "0";
+                  }
+                  ddgi_stop()
+                </script>
+              </td>
+              <td style="padding:8px;width:60%;vertical-align:middle">
+                <span class="papertitle">Real-Time Dynamic Diffuse Global Illumination Based on Light Field Probe</span>
+                <br>
+                <p></p>
+                Record the light field information of the scene by light field probes. Use the specially designed algorithm to query and calculate the multiple diffuse reflections.
+              </td>
+            </tr>
+          </tbody></table>
+
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:0px">
                 <br>
                 <p style="text-align:right;font-size:small;">
-                  Feel free to steal this website's <a href="https://github.com/jonbarron/jonbarron_website">source code</a>. <strong>Do not</strong> scrape the HTML from this page itself, as it includes analytics tags that you do not want on your own website &mdash; use the github code instead. Also, consider using <a href="https://leonidk.com/">Leonid Keselman</a>'s <a href="https://github.com/leonidk/new_website">Jekyll fork</a> of this page.
+                  Website template from <a href="https://jonbarron.info/">here</a>.
                 </p>
               </td>
             </tr>
@@ -294,3 +264,12 @@
     </table>
   </body>
 </html>
+
+<script>
+  function toggleAbstract(link) {
+    const abstractDiv = link.parentElement.querySelector('.abstract');
+    const isVisible = abstractDiv.style.display === "block";
+    abstractDiv.style.display = isVisible ? "none" : "block";
+    link.textContent = isVisible ? "abstract" : "abstract";
+  }
+</script>
