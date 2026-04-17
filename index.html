@@ -75,6 +75,64 @@
 
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+            <tr onmouseout="pio_stop()" onmouseover="pio_start()"  bgcolor="#ffffff">
+              <td style="padding:16px;width:40%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='pio_image'>
+                    <video muted autoplay loop>
+                      <source src="images/pio.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <img src='images/pio.jpg' class="preview-image">
+                </div>
+                <script type="text/javascript">
+                  function pio_start() {
+                    document.getElementById('pio_image').style.opacity = "1";
+                  }
+
+                  function pio_stop() {
+                    document.getElementById('pio_image').style.opacity = "0";
+                  }
+                  pio_stop()
+                </script>
+              </td>
+              <td style="padding:8px;width:60%;vertical-align:middle">
+                <span class="papertitle">PhysInOne: Visual Physics Learning and Reasoning in One Suite</span>
+                <br> 
+                    Siyuan Zhou*, 
+                    Hejun Wang*, 
+                    Hu Cheng*, 
+                    Jinxi Li*, 
+                    Dongsheng Wang*, 
+                    <strong>Junwei Jiang*</strong>, 
+                    Yixiao Jin*, 
+                    Jiayue Huang*, 
+                    Shiwei Mao*, 
+                    Shangjia Liu, 
+                    Yafei Yang, 
+                    Hongkang Song, 
+                    Shenxing Wei, 
+                    Zihui Zhang, 
+                    Data Team, 
+                    Bing Wang, 
+                    Zhihua Wang, 
+                    Chuhang Zou, 
+                    Bo Yang
+                <br>
+                <em>The IEEE/CVF Conference on Computer Vision and Pattern Recognition 2026</em>
+                <br>
+                <a href="https://arxiv.org/pdf/2604.09415">pdf</a> |
+                <a href="javascript:void(0);" onclick="toggleAbstract(this)">abstract</a> |
+                <a href="https://vlar-group.github.io/PhysInOne.html">homepage</a> |
+                <a href="https://github.com/vLAR-group/PhysInOne">code</a>
+                <p></p>
+                <div class="abstract" style="display: none;">
+                  We present PhysInOne, a large-scale synthetic dataset addressing the critical scarcity of physically-grounded training data for AI systems. Unlike existing datasets limited to merely hundreds or thousands of examples, PhysInOne provides 2 million videos across 153,810 dynamic 3D scenes, covering 71 basic physical phenomena in mechanics, optics, fluid dynamics, and magnetism. Distinct from previous works, our scenes feature multiobject interactions against complex backgrounds, with comprehensive ground-truth annotations including 3D geometry, semantics, dynamic motion, physical properties, and text descriptions. We demonstrate PhysInOne’s efficacy across four emerging applications: physics-aware video generation, long-/short-term future frame prediction, physical property estimation, and motion transfer. Experiments show that fine-tuning foundation models on PhysInOne significantly enhances physical plausibility, while also exposing critical gaps in modeling complex physical dynamics and estimating intrinsic properties. As the largest dataset of its kind, orders of magnitude beyond prior works, PhysInOne establishes a new benchmark for advancing physics-grounded world models in generation, simulation, and embodied AI.
+                </div>
+              </td>
+            </tr>
+
             <tr onmouseout="sop_stop()" onmouseover="sop_start()"  bgcolor="#ffffff">
               <td style="padding:16px;width:40%;vertical-align:middle">
                 <div class="one">
